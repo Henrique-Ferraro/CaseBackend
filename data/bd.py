@@ -2,7 +2,7 @@ import pyodbc
 
 connection = (
     "Driver={SQL Server};"
-    "Server=LAPTOP-34N4CKPT\SQLEXPRESS;"
+    "Server=;"
     "Database=caseBackend;"
 )
 
