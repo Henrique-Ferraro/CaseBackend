@@ -4,7 +4,6 @@ FROM flask
 # Espaço de trabalho
 WORKDIR /app
 
-RUN pip install flask_swagger_ui
 RUN pip install flask
 RUN pip install -r requirements.txt
 
