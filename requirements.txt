@@ -1,1 +1,4 @@
-Flask
+flake8 
+flask
+pytest==6.2.4
+xlwt==1.3.0
