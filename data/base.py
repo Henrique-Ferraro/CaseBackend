@@ -1,7 +1,7 @@
 from pony.orm import db_session, commit, select
 from pony.orm.core import ObjectNotFound
 
-class bd:
+class base:
     def __init__(self, entity):
         self.entity = entity
 

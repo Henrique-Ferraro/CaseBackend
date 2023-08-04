@@ -1,13 +1,13 @@
 from pony.orm import db_session
 from pony.orm.core import ObjectNotFound
 from data.base import base
-from entities import User, DistribuicaoInvestimento
+from entities import user
 from data.db import db
 from collections import namedtuple
 
 class user(base):
     def __init__(self):
-        super().__init__(entity=User)
+        super().__init__(entity=user)
         self.base = base(user)
 
     @db_session
