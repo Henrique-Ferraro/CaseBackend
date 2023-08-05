@@ -26,18 +26,27 @@ d. País
 2 - Requisitos não funcionais obrigatórios:
 
 – A API deve respeitar o padrão REST
+
 – Deve possuir produzir logs.
+
 – Uso de arquitetura hexagonal.
+
 – A API deve utilizar solução conteinerizada.
+
 – Devem ser implementados testes unitários com cobertura mínima de 90%.
+
 – Todo código fonte deve estar em um repositório que fique acessível para avaliação.
 
 3 - Requisitos não funcionais desejáveis:
 
 – A aplicação, bem como a infra utilizada deve ser implementada através de Infra as Code
+
 – Uso de AWS
+
 – Uso de terraform
+
 – Uso de orquestradores de containers - opcional
+
 – A API deverá estar exposta em um API Gateway. - opcional
 
 ## Tecnologias utilizadas durante o projeto
