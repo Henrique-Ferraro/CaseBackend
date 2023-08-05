@@ -2,7 +2,6 @@ from flask import render_template, request, redirect, session, flash, url_for, s
 from main import app, db
 from models.models import Cadastro
 from helpers import FormularioCadastro
-import time
 
 
 @app.route('/')
@@ -70,7 +69,7 @@ def atualizar():
 
     return redirect(url_for('index'))
 
-@app.route('/deletar/<int:id>')
+@app.route('/deletar/<int:id>', methods=['DELETE',])
 def deletar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         return redirect(url_for('login'))
