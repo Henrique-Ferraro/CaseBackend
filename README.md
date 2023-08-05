@@ -13,6 +13,7 @@ c. Idade
 d. País
 
 
+
 . Um método GET para consultar um cadastro
 
 . Um método GET para listar todos os cadastros
@@ -22,6 +23,8 @@ d. País
 . Um método PATCH para atualizar um dos dados do cadastro.
 
 . Um método Delete para efetuar a exclusão do cadastro.
+
+
 
 2 - Requisitos não funcionais obrigatórios:
 
@@ -36,6 +39,8 @@ d. País
 – Devem ser implementados testes unitários com cobertura mínima de 90%.
 
 – Todo código fonte deve estar em um repositório que fique acessível para avaliação.
+
+
 
 3 - Requisitos não funcionais desejáveis:
 
