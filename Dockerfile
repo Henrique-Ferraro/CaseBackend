@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 # Copia para dentro do container
 COPY . .
 
-CMD ["python", "src/app.py"]
+CMD ["python", "main.py"]
