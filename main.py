@@ -14,4 +14,4 @@ from views.view_cadastro import *
 from views.view_user import *
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
