@@ -1,25 +1,20 @@
-from logging import CRITICAL, ERROR, WARNING, INFO, DEBUG
-from logging import basicConfig
-from logging import critical, error, warning, info, debug
-from logging import FileHandler, StreamHandler, Filter
+import logging
 
-class Filtro(Filter):
-    def filter(self, record):
-        if 'cartão' in record.msg:
-            record.msg = 'Vazou a Senha do Cartão. ATENÇÃO!!'
-            return True
-        return True
+logging.basicConfig(level=logging.INFO, filename="programa.log", format="%(asctime)s - %(levelname)s - %(message)s")
 
-file_handler = FileHandler('logs.log', 'a')
-file_handler.setLevel(WARNING)
-file_handler.addFilter(Filtro())
+def nome_nulo(nome):
+    if nome == 0:
+        logging.warning("O campo nome não pode ser vazio!!!")
+    return (nome)
 
-stream_handler = StreamHandler()
+def sobrenome_nulo(sobrenome):
+    if sobrenome == 0:
+        logging.error("O campo sobrenome não pode ser nulo. Tente novamente.")
+    return (sobrenome)
 
-basicConfig(
-    level=DEBUG,
-    format='%(levelname)s:-*%(asctime)s:-*%(message)s',
-    handlers=[file_handler, stream_handler]
-)
 
-critical('Deu Erro cartão')
+nome = nome_nulo()
+logging.info(f"Nome: {nome}")
+
+lucro_acao = lucro_por_acoes(faturamento, custo, percentual_imposto, acoes)
+logging.info(f"Lucro por ação: {lucro_acao}")
