@@ -5,14 +5,22 @@ Desenvolver uma API onde seja possível receber dados pessoais e enviar uma noti
 Campos para os dados a serem recebidos na API:
 
 a. Nome
+
 b. Sobrenome
+
 c. Idade
+
 d. País
 
+
 . Um método GET para consultar um cadastro
+
 . Um método GET para listar todos os cadastros
+
 . Um método POST para efetuar um cadastramento
+
 . Um método PATCH para atualizar um dos dados do cadastro.
+
 . Um método Delete para efetuar a exclusão do cadastro.
 
 2 - Requisitos não funcionais obrigatórios:
