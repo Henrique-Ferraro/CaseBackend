@@ -7,7 +7,7 @@ from helpers import FormularioCadastro
 @app.route('/')
 def index():
     lista = Cadastro.query.order_by(Cadastro.id)
-    return render_template('lista.html', titulo='Cadastro', cadastros=lista)
+    return render_template('lista.html', titulo='Cadastro', cadastro=lista)
 
 @app.route('/novo')
 def novo():
