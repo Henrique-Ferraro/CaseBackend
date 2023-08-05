@@ -16,5 +16,5 @@ def sobrenome_nulo(sobrenome):
 nome = nome_nulo()
 logging.info(f"Nome: {nome}")
 
-lucro_acao = lucro_por_acoes(faturamento, custo, percentual_imposto, acoes)
-logging.info(f"Lucro por ação: {lucro_acao}")
+# lucro_acao = lucro_por_acoes(faturamento, custo, percentual_imposto, acoes)
+# logging.info(f"Lucro por ação: {lucro_acao}")

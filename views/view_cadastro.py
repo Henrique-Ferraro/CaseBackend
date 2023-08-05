@@ -54,7 +54,7 @@ def editar(id):
     
     return render_template('editar.html', titulo='Editando Cadastro', id=id, form=form)
 
-@app.route('/atualizar', methods=['POST',])
+@app.route('/atualizar', methods=['PATCH',])
 def atualizar():
     form = FormularioCadastro(request.form)
 
