@@ -1,5 +1,5 @@
 import os
-from main import app
+from main import db
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, validators
 
@@ -10,7 +10,7 @@ class FormularioCadastro(FlaskForm):
     pais = StringField('País', [validators.DataRequired(), validators.Length(min=1, max=20)])
     salvar = SubmitField('Salvar')
 
-class FormularioUsuario(FlaskForm):
-    nickname = StringField('Nickname', [validators.DataRequired(), validators.Length(min=1, max=8)])
-    senha = PasswordField('Senha', [validators.DataRequired(), validators.Length(min=1, max=100)])
-    login = SubmitField('Login')
+# class FormularioUsuario(FlaskForm):
+#     nickname = StringField('Nickname', [validators.DataRequired(), validators.Length(min=1, max=8)])
+#     senha = PasswordField('Senha', [validators.DataRequired(), validators.Length(min=1, max=100)])
+#     login = SubmitField('Login')
